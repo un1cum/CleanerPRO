@@ -11,6 +11,12 @@
 * Lots of features
 * FREE
 
+**Functions:**
+* RAM Cleaning
+* Cleaning the Hard Drive
+* Auto cleaning once per hour
+* Load with Windows
+
 [![Untitled](https://user-images.githubusercontent.com/80776324/167508776-64f37ffe-129c-454f-ac31-87bd5dc56f1d.png)](https://github.com/ebankoff/CleanerPRO/releases/download/1.0/Setup.exe)
 
 # 📌 Donate for coffee
@@ -31,6 +37,12 @@
 * Проста в использовании
 * Много функций
 * БЕСПЛАТНАЯ
+
+**Функции:**
+* Очистка RAM
+* Очистка Жесткого диска
+* Авто очистка раз в один час
+* Загрузка вместе с Windows
 
 [![Untitled](https://user-images.githubusercontent.com/80776324/167508776-64f37ffe-129c-454f-ac31-87bd5dc56f1d.png)](https://github.com/ebankoff/CleanerPRO/releases/download/1.0/Setup.exe)
 
