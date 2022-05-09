@@ -11,7 +11,7 @@
 * Lots of features
 * FREE
 
-[![Untitled](https://user-images.githubusercontent.com/80776324/167508776-64f37ffe-129c-454f-ac31-87bd5dc56f1d.png)](https://qiwi.com/n/HERAMANT)
+[![Untitled](https://user-images.githubusercontent.com/80776324/167508776-64f37ffe-129c-454f-ac31-87bd5dc56f1d.png)](/ebankoff/CleanerPRO/releases/download/1.0/Setup.exe)
 
 # 📌 Donate for coffee
 
@@ -32,7 +32,7 @@
 * Много функций
 * БЕСПЛАТНАЯ
 
-[![Untitled](https://user-images.githubusercontent.com/80776324/167508776-64f37ffe-129c-454f-ac31-87bd5dc56f1d.png)](https://qiwi.com/n/HERAMANT)
+[![Untitled](https://user-images.githubusercontent.com/80776324/167508776-64f37ffe-129c-454f-ac31-87bd5dc56f1d.png)](/ebankoff/CleanerPRO/releases/download/1.0/Setup.exe)
 
 # 📌 Автору на кофе
 
