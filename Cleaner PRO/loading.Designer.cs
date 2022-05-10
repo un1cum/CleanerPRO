@@ -39,7 +39,7 @@
             // Progressbar1
             // 
             this.Progressbar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.Progressbar1.AnimationSpeed = 500;
+            this.Progressbar1.AnimationSpeed = 400;
             this.Progressbar1.BackColor = System.Drawing.Color.Transparent;
             this.Progressbar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Progressbar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));

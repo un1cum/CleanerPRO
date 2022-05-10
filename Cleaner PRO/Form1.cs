@@ -140,9 +140,25 @@ namespace Cleaner_PRO
         private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
         {
             if (bunifuCheckbox1.Checked == true)
+            {
                 SetAutorunValue(true);
+                NI.BalloonTipText = "Autoload enabled";
+                NI.BalloonTipTitle = "INFO";
+                NI.BalloonTipIcon = ToolTipIcon.Info;
+                NI.Icon = this.Icon;
+                NI.Visible = true;
+                NI.ShowBalloonTip(1000);
+            }
             else
+            {
                 SetAutorunValue(false);
+                NI.BalloonTipText = "Autoload disabled";
+                NI.BalloonTipTitle = "INFO";
+                NI.BalloonTipIcon = ToolTipIcon.Info;
+                NI.Icon = this.Icon;
+                NI.Visible = true;
+                NI.ShowBalloonTip(1000);
+            }
         }
         [DllImport("shell32.dll")] static extern int SHEmptyRecycleBin(IntPtr hWnd, string pszRootPath, uint dwFlags);
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -367,7 +383,28 @@ namespace Cleaner_PRO
         }
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("In development...", "INFO");
+            try
+            {
+                string s = bunifuDropdown1.selectedValue.ToString(); 
+                Process p = new Process();
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.FileName = "cmd.exe";
+                p.StartInfo.Arguments = "/C " + "defrag" + s +":";
+                p.StartInfo.CreateNoWindow = true;
+                p.StartInfo.Verb = "runas";
+                p.Start();
+
+                NI.BalloonTipText = "Optimization was successful";
+                NI.BalloonTipTitle = "INFO";
+                NI.BalloonTipIcon = ToolTipIcon.Info;
+                NI.Icon = this.Icon;
+                NI.Visible = true;
+                NI.ShowBalloonTip(1000);
+            }
+            catch
+            {
+                MessageBox.Show("Select a drive", "INFO");
+            }
         }
         private void label6_Click(object sender, EventArgs e)
         {
@@ -441,6 +478,13 @@ namespace Cleaner_PRO
                 {
                     string s = bunifuDropdown1.selectedValue.ToString();
                     timer1.Enabled = true;
+
+                    NI.BalloonTipText = "Auto clean enabled";
+                    NI.BalloonTipTitle = "INFO";
+                    NI.BalloonTipIcon = ToolTipIcon.Info;
+                    NI.Icon = this.Icon;
+                    NI.Visible = true;
+                    NI.ShowBalloonTip(1000);
                 }
                 catch
                 {
@@ -451,6 +495,13 @@ namespace Cleaner_PRO
             else
             {
                 timer1.Enabled = false;
+
+                NI.BalloonTipText = "Auto clean disabled";
+                NI.BalloonTipTitle = "INFO";
+                NI.BalloonTipIcon = ToolTipIcon.Info;
+                NI.Icon = this.Icon;
+                NI.Visible = true;
+                NI.ShowBalloonTip(1000);
             }
         }
         private static void CleanStandbyList(bool lowPriority = false)
@@ -593,6 +644,14 @@ namespace Cleaner_PRO
             int per4 = (int)Math.Round(percent3);
             Progressbar2.Value = per2;
             Progressbar2.Text = Progressbar2.Value.ToString() + "%";
+
+            Process p = new Process();
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.FileName = "cmd.exe";
+            p.StartInfo.Arguments = "/C " + "defrag" + s + ":";
+            p.StartInfo.CreateNoWindow = true;
+            p.StartInfo.Verb = "runas";
+            p.Start();
 
             NI.BalloonTipText = "Cleaning was successful, next cleaning in 1 hour";
             NI.BalloonTipTitle = "INFO";
