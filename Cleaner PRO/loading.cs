@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
@@ -29,6 +22,7 @@ namespace Cleaner_PRO
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             Progressbar1.Value = 0;
         }
+        IniFile iniFile = new IniFile("config.ini");
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -45,9 +39,19 @@ namespace Cleaner_PRO
             if (Progressbar1.Value == 100)
             {
                 timer1.Enabled = false;
-                Form1 se_form = new Form1();
-                se_form.Show();
-                this.Hide();
+                string s = iniFile.ReadString("theme", "config");
+                if (s == "dark")
+                {
+                    Form1 se_form = new Form1();
+                    se_form.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    White1 se_form = new White1();
+                    se_form.Show();
+                    this.Hide();
+                }
             }
         }
         private void Progressbar1_Click(object sender, EventArgs e)

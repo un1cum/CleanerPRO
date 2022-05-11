@@ -1,0 +1,20 @@
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\Cleaner PRO.exe.config
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\Cleaner PRO.exe
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\Cleaner PRO.pdb
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\CircularProgressBar.dll
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\WinFormAnimation.dll
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\bin\Debug\CircularProgressBar.xml
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.csproj.AssemblyReference.cache
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.csproj.SuggestedBindingRedirects.cache
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner_PRO.Form1.resources
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner_PRO.loading.resources
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner_PRO.Properties.Resources.resources
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.csproj.GenerateResource.cache
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.csproj.CoreCompileInputs.cache
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.csproj.CopyComplete
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.exe
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner PRO.pdb
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner_PRO.Settings.resources
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner_PRO.White1.resources
+C:\Users\ebankoff\source\repos\Cleaner PRO\Cleaner PRO\obj\Debug\Cleaner_PRO.White2.resources

@@ -36,9 +36,6 @@
     <ApplicationIcon>bin.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BekraRamclear, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bekra.RamClear.1.0.0.2\lib\BekraRamclear.dll</HintPath>
-    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
@@ -46,9 +43,12 @@
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +58,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
     <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
     </Reference>
@@ -71,6 +74,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IniFile.cs" />
     <Compile Include="loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +83,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="White1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="White1.Designer.cs">
+      <DependentUpon>White1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="White2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="White2.Designer.cs">
+      <DependentUpon>White2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +117,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="White1.resx">
+      <DependentUpon>White1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="White2.resx">
+      <DependentUpon>White2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="config.Designer.ini" />
+    <None Include="config.ini">
+      <SubType>Form</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin.ico" />
+    <None Include="Resources\pngwing.com %282%29.png" />
+    <None Include="Resources\pngwing.com %281%29.png" />
+    <None Include="Resources\pngwing.com.png" />
     <None Include="Resources\reject.png" />
     <None Include="Resources\minimize-sign.png" />
   </ItemGroup>

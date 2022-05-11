@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Cleaner_PRO
 {
-    public partial class Form1 : Form
+    public partial class White1 : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -22,7 +22,7 @@ namespace Cleaner_PRO
             int nWidthEllipse,
             int nHeightEllipse
             );
-        public Form1()
+        public White1()
         {
             InitializeComponent();
 
@@ -70,17 +70,13 @@ namespace Cleaner_PRO
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void White1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -349,11 +345,11 @@ namespace Cleaner_PRO
         {
             try
             {
-                string s = bunifuDropdown1.selectedValue.ToString(); 
+                string s = bunifuDropdown1.selectedValue.ToString();
                 Process p = new Process();
                 p.StartInfo.UseShellExecute = false;
                 p.StartInfo.FileName = "cmd.exe";
-                p.StartInfo.Arguments = "/C " + "defrag" + s +":";
+                p.StartInfo.Arguments = "/C " + "defrag" + s + ":";
                 p.StartInfo.CreateNoWindow = true;
                 p.StartInfo.Verb = "runas";
                 p.Start();
@@ -410,7 +406,7 @@ namespace Cleaner_PRO
             }
             catch
             {
-                
+
             }
             finally
             {
@@ -421,7 +417,7 @@ namespace Cleaner_PRO
                 }
                 catch (InvalidOperationException)
                 {
-                    
+
                 }
             }
 
@@ -431,7 +427,7 @@ namespace Cleaner_PRO
             }
             catch
             {
-                
+
             }
         }
         private static void CleanStandbyList(bool lowPriority = false)
@@ -476,10 +472,15 @@ namespace Cleaner_PRO
             this.Show();
             notifyIcon1.Visible = false;
         }
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void White1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
         }
+        private void White1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private NotifyIcon NI = new NotifyIcon();
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -579,22 +580,6 @@ namespace Cleaner_PRO
             NI.Visible = true;
             NI.ShowBalloonTip(1000);
         }
-        private void bunifuThinButton24_Click(object sender, EventArgs e)
-        {
-            string s = iniFile.ReadString("theme", "config");
-            if (s == "dark")
-            {
-                Settings se_form = new Settings();
-                se_form.Show();
-                this.Hide();
-            }
-            else
-            {
-                White2 se_form = new White2();
-                se_form.Show();
-                this.Hide();
-            }
-        }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -653,6 +638,23 @@ namespace Cleaner_PRO
             catch
             {
 
+            }
+        }
+
+        private void bunifuThinButton24_Click_1(object sender, EventArgs e)
+        {
+            string s = iniFile.ReadString("theme", "config");
+            if (s == "dark")
+            {
+                Settings se_form = new Settings();
+                se_form.Show();
+                this.Hide();
+            }
+            else
+            {
+                White2 se_form = new White2();
+                se_form.Show();
+                this.Hide();
             }
         }
     }
