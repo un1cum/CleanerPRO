@@ -1,7 +1,7 @@
 # [![wtf](https://i.ibb.co/WfwbMxw/Untitled-Copy-Copy-Copy.png "CleanerPRO")](https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PLrpgO-fUNO4OKpFbFXb2cQlF72Yj3ppJv) 
 # Cleaner PRO 🗑
 
-[![Button](https://badgen.net/badge/patreon/patreon/red?icon=patreon&label)](https://www.patreon.com/ebankoff) [![Button](https://badgen.net/badge/un1cum/un1cum/white?icon=github&label)](https://github.com/un1cum)
+[![Button](https://badgen.net/badge/patreon/patreon/red?icon=patreon&label)](https://www.patreon.com/un1cum) [![Button](https://badgen.net/badge/un1cum/un1cum/white?icon=github&label)](https://github.com/un1cum)
 
 # 📌 EN
 
